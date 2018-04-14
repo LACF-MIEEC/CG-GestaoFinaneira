@@ -27,17 +27,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    objectmanager.cpp \
     field.cpp \
     invoice.cpp \
-    dbmanager.cpp
+    graphicwindow.cpp
 
 HEADERS += \
         mainwindow.h \
-    objectmanager.h \
     field.h \
     invoice.h \
-    dbmanager.h
+    graphicwindow.h
 
 FORMS += \
         mainwindow.ui
