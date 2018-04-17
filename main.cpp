@@ -7,7 +7,6 @@
 #include <QDir>
 #include <QSurfaceFormat>
 
-//#include "glut.h"
 
 int main(int argc, char *argv[])
 {
