@@ -1,28 +1,29 @@
 #include "mainwindow.h"
 #include <QApplication>
 
+#include "freeglut.h"
+
 #include <QDebug>
 #include <QDir>
+#include <QSurfaceFormat>
 
-#include <dbmanager.h>
-
-QDir DBdir("test.db");
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    //MainWindow w;
 
-    DBManager db(DBdir.absolutePath());
+    glutInit(&argc, argv);
 
-    if (db.isOpen())
-    {
+//    QSurfaceFormat format;
+//    format.setDepthBufferSize(24);
+//    format.setStencilBufferSize(10);
+//    format.setVersion(3, 7);
+//    format.setProfile(QSurfaceFormat::CompatibilityProfile);
+//    QSurfaceFormat::setDefaultFormat(format);
 
-        db.createTable();   // Creates a table if it doens't exist. Otherwise, it will use existing table.
-        db.addPerson("A");
 
-        db.printAllPersons();
-    }
-    //w.show();
+    MainWindow w;
+
+    w.show();
     return a.exec();
 }

@@ -6,6 +6,8 @@
 
 QT       += core gui
 QT	 += sql
+QT       += core gui opengl
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -27,19 +29,27 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    objectmanager.cpp \
     field.cpp \
     invoice.cpp \
+    glstatusbar.cpp \
+    circulargraphic.cpp \
+    linesgraphic.cpp \
+    sorting.cpp \
     dbmanager.cpp
 
 HEADERS += \
         mainwindow.h \
-    objectmanager.h \
     field.h \
     invoice.h \
+    glstatusbar.h \
+    circulargraphic.h \
+    circulargraphic.h \
+    rgb.h \
+    linesgraphic.h \
+    sorting.h \
     dbmanager.h
 
 FORMS += \
         mainwindow.ui
 
-RESOURCES +=
+LIBS += libfreeglut
