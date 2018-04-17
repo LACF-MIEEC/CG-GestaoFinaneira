@@ -248,6 +248,7 @@ Makefile: CG_18.pro C:\Qt\5.10.1\msvc2017_64\mkspecs\win32-msvc\qmake.conf C:\Qt
 		C:\Qt\5.10.1\msvc2017_64\mkspecs\features\lex.prf \
 		CG_18.pro \
 		C:\Qt\5.10.1\msvc2017_64\lib\qtmaind.prl \
+		C:\Qt\5.10.1\msvc2017_64\lib\Qt5OpenGL.prl \
 		C:\Qt\5.10.1\msvc2017_64\lib\Qt5Widgets.prl \
 		C:\Qt\5.10.1\msvc2017_64\lib\Qt5Gui.prl \
 		C:\Qt\5.10.1\msvc2017_64\lib\Qt5Sql.prl \
@@ -426,6 +427,7 @@ C:\Qt\5.10.1\msvc2017_64\mkspecs\features\yacc.prf:
 C:\Qt\5.10.1\msvc2017_64\mkspecs\features\lex.prf:
 CG_18.pro:
 C:\Qt\5.10.1\msvc2017_64\lib\qtmaind.prl:
+C:\Qt\5.10.1\msvc2017_64\lib\Qt5OpenGL.prl:
 C:\Qt\5.10.1\msvc2017_64\lib\Qt5Widgets.prl:
 C:\Qt\5.10.1\msvc2017_64\lib\Qt5Gui.prl:
 C:\Qt\5.10.1\msvc2017_64\lib\Qt5Sql.prl:

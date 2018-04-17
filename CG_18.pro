@@ -6,6 +6,8 @@
 
 QT       += core gui
 QT	 += sql
+QT       += core gui opengl
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -29,15 +31,23 @@ SOURCES += \
         mainwindow.cpp \
     field.cpp \
     invoice.cpp \
-    graphicwindow.cpp
+    glstatusbar.cpp \
+    circulargraphic.cpp \
+    linesgraphic.cpp \
+    sorting.cpp
 
 HEADERS += \
         mainwindow.h \
     field.h \
     invoice.h \
-    graphicwindow.h
+    glstatusbar.h \
+    circulargraphic.h \
+    circulargraphic.h \
+    rgb.h \
+    linesgraphic.h \
+    sorting.h
 
 FORMS += \
         mainwindow.ui
 
-RESOURCES +=
+LIBS += libfreeglut
