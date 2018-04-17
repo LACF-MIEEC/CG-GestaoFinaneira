@@ -34,7 +34,8 @@ SOURCES += \
     glstatusbar.cpp \
     circulargraphic.cpp \
     linesgraphic.cpp \
-    sorting.cpp
+    sorting.cpp \
+    dbmanager.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -45,7 +46,8 @@ HEADERS += \
     circulargraphic.h \
     rgb.h \
     linesgraphic.h \
-    sorting.h
+    sorting.h \
+    dbmanager.h
 
 FORMS += \
         mainwindow.ui
