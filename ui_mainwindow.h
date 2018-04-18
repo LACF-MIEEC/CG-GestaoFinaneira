@@ -43,14 +43,14 @@ public:
     QGridLayout *gridLayout_2;
     CircularGraphic *MainCheese;
     CircularGraphic *SpentCheese;
-    LinesGraphic *AnualGraph;
     LinesGraphic *MonthGraph;
+    LinesGraphic *AnualGraph;
     QWidget *page_2;
     QHBoxLayout *horizontalLayout;
     QHBoxLayout *horizontalLayout_3;
     QPushButton *MainButton;
+    QPushButton *AddGasto;
     QPushButton *MonthButton;
-    QPushButton *pushButton_3;
     QMenuBar *menuBar;
     QToolBar *toolBar;
 
@@ -115,28 +115,28 @@ public:
         MainCheese->setSizePolicy(sizePolicy2);
         MainCheese->setMinimumSize(QSize(0, 50));
 
-        gridLayout_2->addWidget(MainCheese, 0, 0, 1, 1);
+        gridLayout_2->addWidget(MainCheese, 2, 0, 1, 1);
 
         SpentCheese = new CircularGraphic(MainView);
         SpentCheese->setObjectName(QStringLiteral("SpentCheese"));
         sizePolicy2.setHeightForWidth(SpentCheese->sizePolicy().hasHeightForWidth());
         SpentCheese->setSizePolicy(sizePolicy2);
 
-        gridLayout_2->addWidget(SpentCheese, 0, 1, 1, 1);
-
-        AnualGraph = new LinesGraphic(MainView);
-        AnualGraph->setObjectName(QStringLiteral("AnualGraph"));
-        sizePolicy2.setHeightForWidth(AnualGraph->sizePolicy().hasHeightForWidth());
-        AnualGraph->setSizePolicy(sizePolicy2);
-
-        gridLayout_2->addWidget(AnualGraph, 1, 0, 1, 1);
+        gridLayout_2->addWidget(SpentCheese, 2, 1, 1, 1);
 
         MonthGraph = new LinesGraphic(MainView);
         MonthGraph->setObjectName(QStringLiteral("MonthGraph"));
         sizePolicy2.setHeightForWidth(MonthGraph->sizePolicy().hasHeightForWidth());
         MonthGraph->setSizePolicy(sizePolicy2);
 
-        gridLayout_2->addWidget(MonthGraph, 1, 1, 1, 1);
+        gridLayout_2->addWidget(MonthGraph, 3, 1, 1, 1);
+
+        AnualGraph = new LinesGraphic(MainView);
+        AnualGraph->setObjectName(QStringLiteral("AnualGraph"));
+        sizePolicy2.setHeightForWidth(AnualGraph->sizePolicy().hasHeightForWidth());
+        AnualGraph->setSizePolicy(sizePolicy2);
+
+        gridLayout_2->addWidget(AnualGraph, 3, 0, 1, 1);
 
 
         verticalLayout->addLayout(gridLayout_2);
@@ -162,15 +162,20 @@ public:
 
         horizontalLayout_3->addWidget(MainButton);
 
+        AddGasto = new QPushButton(centralWidget);
+        AddGasto->setObjectName(QStringLiteral("AddGasto"));
+        QSizePolicy sizePolicy3(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy3.setHorizontalStretch(0);
+        sizePolicy3.setVerticalStretch(0);
+        sizePolicy3.setHeightForWidth(AddGasto->sizePolicy().hasHeightForWidth());
+        AddGasto->setSizePolicy(sizePolicy3);
+
+        horizontalLayout_3->addWidget(AddGasto);
+
         MonthButton = new QPushButton(centralWidget);
         MonthButton->setObjectName(QStringLiteral("MonthButton"));
 
         horizontalLayout_3->addWidget(MonthButton);
-
-        pushButton_3 = new QPushButton(centralWidget);
-        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-
-        horizontalLayout_3->addWidget(pushButton_3);
 
 
         gridLayout->addLayout(horizontalLayout_3, 0, 0, 1, 1);
@@ -178,7 +183,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 866, 21));
+        menuBar->setGeometry(QRect(0, 0, 866, 26));
         MainWindow->setMenuBar(menuBar);
         toolBar = new QToolBar(MainWindow);
         toolBar->setObjectName(QStringLiteral("toolBar"));
@@ -194,8 +199,8 @@ public:
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
         MainTitle->setText(QApplication::translate("MainWindow", "Vista Geral", nullptr));
         MainButton->setText(QApplication::translate("MainWindow", "Vista Geral", nullptr));
+        AddGasto->setText(QApplication::translate("MainWindow", "Adicionar Gasto", nullptr));
         MonthButton->setText(QApplication::translate("MainWindow", "Vista Mensal", nullptr));
-        pushButton_3->setText(QApplication::translate("MainWindow", "PushButton", nullptr));
         toolBar->setWindowTitle(QApplication::translate("MainWindow", "toolBar", nullptr));
     } // retranslateUi
 

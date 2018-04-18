@@ -91,7 +91,7 @@
         </item>
         <item>
          <layout class="QGridLayout" name="gridLayout_2">
-          <item row="0" column="0">
+          <item row="2" column="0">
            <widget class="CircularGraphic" name="MainCheese">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -107,7 +107,7 @@
             </property>
            </widget>
           </item>
-          <item row="0" column="1">
+          <item row="2" column="1">
            <widget class="CircularGraphic" name="SpentCheese">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -117,8 +117,8 @@
             </property>
            </widget>
           </item>
-          <item row="1" column="0">
-           <widget class="LinesGraphic" name="AnualGraph">
+          <item row="3" column="1">
+           <widget class="LinesGraphic" name="MonthGraph">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -127,8 +127,8 @@
             </property>
            </widget>
           </item>
-          <item row="1" column="1">
-           <widget class="LinesGraphic" name="MonthGraph">
+          <item row="3" column="0">
+           <widget class="LinesGraphic" name="AnualGraph">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -157,16 +157,22 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="MonthButton">
+       <widget class="QPushButton" name="AddGasto">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="text">
-         <string>Vista Mensal</string>
+         <string>Adicionar Gasto</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="MonthButton">
         <property name="text">
-         <string>PushButton</string>
+         <string>Vista Mensal</string>
         </property>
        </widget>
       </item>
@@ -180,7 +186,7 @@
      <x>0</x>
      <y>0</y>
      <width>866</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

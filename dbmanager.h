@@ -10,6 +10,7 @@
 #include <QDateTime>
 #include <QVector>
 #include <QString>
+#include <QDir>
 
 //---------------------------------------------------------------
 //ESTRUTURAS
@@ -35,6 +36,8 @@ struct PESSOA{
     QString Nome;
     QString Grau;
 };
+
+extern QDir DBdir;
 
 class DB_Manager
 {

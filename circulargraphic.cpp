@@ -1,22 +1,25 @@
 #include "circulargraphic.h"
 #include "rgb.h"
 
+bool LessThan(const double &p1, const double &p2){
+    return p1<p2;
+}
 
 CircularGraphic::CircularGraphic(QWidget *parent)
     : QOpenGLWidget(parent)
 {
-    Radius=1;
+    Radius=0.7;
     BackGround  = new Color;
     *BackGround = White;
 
-    SectionValue.append(0.3f);
+   /* SectionValue.append(0.3f);
     SectionColor.append(&Red);
 
     SectionValue.append(0.4f);
     SectionColor.append(&Blue);
 
     SectionValue.append(0.3f);
-    SectionColor.append(&LigthGrey);
+    SectionColor.append(&LigthGrey);*/
 }
 
 void CircularGraphic::initializeGL()
@@ -25,11 +28,11 @@ void CircularGraphic::initializeGL()
     glClearColor(BackGround->r,BackGround->g,BackGround->b,BackGround->a);
 
 
-//        glEnable( GL_LINE_SMOOTH );
-    //    glEnable(GL_POINT_SMOOTH);
-//        glEnable( GL_POLYGON_SMOOTH );
-//        glHint( GL_LINE_SMOOTH_HINT, GL_NICEST );
-//        glHint( GL_POLYGON_SMOOTH_HINT, GL_NICEST );
+        glEnable( GL_LINE_SMOOTH );
+//        glEnable(GL_POINT_SMOOTH);
+        glEnable( GL_POLYGON_SMOOTH );
+        glHint( GL_LINE_SMOOTH_HINT, GL_NICEST );
+        glHint( GL_POLYGON_SMOOTH_HINT, GL_NICEST );
     //    glHint( GL_POINT_SMOOTH_HINT, GL_NICEST );
 
         glEnable(GL_BLEND);
@@ -72,6 +75,8 @@ void CircularGraphic::paintGL(){
         SliceStart  +=SectionValue.at(s)*2*PI;
 
     }
+
+    qSort(SectionValue.begin(), SectionValue.end(), LessThan);//Sort X
 
     SliceStart  =0;
     SliceEnd    =0;

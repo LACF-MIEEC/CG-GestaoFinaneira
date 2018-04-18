@@ -25,7 +25,7 @@ public:
 
     void BackGroundColor(Rgba color);
 
-protected:
+
 
     void initializeGL() Q_DECL_OVERRIDE;
 
@@ -33,7 +33,7 @@ protected:
 
     void paintGL() Q_DECL_OVERRIDE;
 
-private:
+
 
     Rgba* BackGround;
     Rgba* GridColor;

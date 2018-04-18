@@ -961,6 +961,7 @@ float DB_Manager::getOrcamentoTotalByAno(QDate Ano){
     {
           valor = query.value("Valor").toFloat();
     }
+    qDebug() << "Valor" << valor;
     return valor;
 }
 

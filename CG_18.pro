@@ -35,7 +35,8 @@ SOURCES += \
     circulargraphic.cpp \
     linesgraphic.cpp \
     sorting.cpp \
-    dbmanager.cpp
+    dbmanager.cpp \
+    adddialog.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -47,10 +48,12 @@ HEADERS += \
     rgb.h \
     linesgraphic.h \
     sorting.h \
-    dbmanager.h
+    dbmanager.h \
+    adddialog.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    adddialog.ui
 
 #LIBS += libfreeglut
 

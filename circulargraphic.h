@@ -25,7 +25,7 @@ public:
 
     void setBackGround(Rgba color);
 
-protected:
+
     void initializeGL() Q_DECL_OVERRIDE;
 
     void resizeGL(int w, int h) Q_DECL_OVERRIDE;
@@ -34,7 +34,6 @@ protected:
 
 
 
-private:
 
     double  Radius;
 

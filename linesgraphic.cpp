@@ -43,23 +43,23 @@ LinesGraphic::LinesGraphic(QWidget*parent)
 
     Arrows=true;
 
-    //          TEST VALUES
-    QVector<QPoint> pontos,pontos2;
-    LinePoints *linha=new LinePoints,*linha2 =new LinePoints;
-    for(int i=0; i<n_XTicks; i++)
-        pontos.append(QPoint(i+1, rand() % 100));
-    linha->Points=pontos;
-    Lines.append(linha);
-    for(int i=0; i<n_XTicks; i++)
-        pontos2.append(QPoint(i+1, rand() % 100));
-    linha2->Points=pontos2;
-    Lines.append(linha2);
+//    //          TEST VALUES
+//    QVector<QPoint> pontos,pontos2;
+//    LinePoints *linha=new LinePoints,*linha2 =new LinePoints;
+//    for(int i=0; i<n_XTicks; i++)
+//        pontos.append(QPoint(i+1, rand() % 100));
+//    linha->Points=pontos;
+//    Lines.append(linha);
+//    for(int i=0; i<n_XTicks; i++)
+//        pontos2.append(QPoint(i+1, rand() % 100));
+//    linha2->Points=pontos2;
+//    Lines.append(linha2);
 
-    LineColor.append(&Green);
-    LineColor.append(&Red);
+//    LineColor.append(&Green);
+//    LineColor.append(&Red);
 
-    DotsColor.append(&Blue);
-    DotsColor.append(&Black);
+//    DotsColor.append(&Blue);
+//    DotsColor.append(&Black);
 
     XAxisLabel=QString("Abcissa");
     YAxisLabel=QString("Ordenada");

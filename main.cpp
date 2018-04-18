@@ -10,9 +10,8 @@
 
 #include <dbmanager.h>
 
-QDir DBdir("test.db");
-static const QString path = "example.db";
 
+QDir DBdir("test.db");
 
 int main(int argc, char *argv[])
 {
@@ -27,35 +26,61 @@ int main(int argc, char *argv[])
     //    format.setProfile(QSurfaceFormat::CompatibilityProfile);
     //    QSurfaceFormat::setDefaultFormat(format);
 
+    DB_Manager db(DBdir.absolutePath());
+//        db.createTables();
+
+//            //---------------------------------------------------------------
+//            //ADD'S
+//            //---------------------------------------------------------------
+
+//            int Area =3;
+//            int Ano = 2019;
+//            float Valor=150.6;
+//            int ID_Pessoa =1;
+//            int ID_Gasto = 1;
+//            int E_Fatura = 123;
+//            int flag=0;
+//            QString Pessoa="Pedro";
+//            QString Grau = "Pai";
+//            QString Data_String;
+
+//            Data_String = "2017-05-08";
+//            QDate data1(QDate::fromString(Data_String,Qt::ISODate));
+
+//            db.addPessoa(Pessoa,Grau);
+
+//            db.addOrcamento(Area,Valor,data1);
+
+//            db.addGasto(data1,Area,Valor,"Manteiga",ID_Pessoa,E_Fatura);
 
     MainWindow w;
-    DB_Manager db(DBdir.absolutePath());
-    if (db.isOpen())
-    {
-        //---------------------------------------------------------------
-        //CREATE TABLES
-        //---------------------------------------------------------------
+//    DB_Manager db(DBdir.absolutePath());
+//    if (db.isOpen())
+//    {
+//        //---------------------------------------------------------------
+//        //CREATE TABLES
+//        //---------------------------------------------------------------
 
-        //db.createTables();
+//        //db.createTables();
 
 
-        //---------------------------------------------------------------
-        //ADD'S
-        //---------------------------------------------------------------
+//        //---------------------------------------------------------------
+//        //ADD'S
+//        //---------------------------------------------------------------
 
-        int Area =3;
-        int Ano = 2019;
-        float Valor=150.6;
-        int ID_Pessoa =1;
-        int ID_Gasto = 1;
-        int E_Fatura = 123;
-        int flag=0;
-        QString Pessoa="Pedro";
-        QString Grau = "Pai";
-        QString Data_String;
+//        int Area =3;
+//        int Ano = 2019;
+//        float Valor=150.6;
+//        int ID_Pessoa =1;
+//        int ID_Gasto = 1;
+//        int E_Fatura = 123;
+//        int flag=0;
+//        QString Pessoa="Pedro";
+//        QString Grau = "Pai";
+//        QString Data_String;
 
-        Data_String = "2019-05-08";
-        QDate data1(QDate::fromString(Data_String,Qt::ISODate));
+//        Data_String = "2019-05-08";
+//        QDate data1(QDate::fromString(Data_String,Qt::ISODate));
 
         //db.addPessoa(Pessoa,Grau);
 
@@ -160,15 +185,15 @@ int main(int argc, char *argv[])
         //OUTROS
         //---------------------------------------------------------------
 
-        //db.removeAll();
-        //db.clearAll();
+//        //db.removeAll();
+//        //db.clearAll();
 
-        qDebug() << "End";
-    }
-    else
-    {
-        qDebug() << "Database is not open!";
-    }
+//        qDebug() << "End";
+//    }
+//    else
+//    {
+//        qDebug() << "Database is not open!";
+//    }
     w.show();
     return a.exec();
 }
