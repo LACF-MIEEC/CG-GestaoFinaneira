@@ -1305,6 +1305,7 @@ float DB_Manager::getTotalGastosByPessoaByAreaByMes(int ID_Pessoa,int Area,QDate
     {
         return query.value("Valor").toFloat();
     }
+    return -1;
 }
 
 float DB_Manager::getTotalGastosByPessoaByMes(int ID_Pessoa,QDate Mes){
