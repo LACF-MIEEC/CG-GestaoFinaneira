@@ -52,4 +52,5 @@ HEADERS += \
 FORMS += \
         mainwindow.ui
 
-LIBS += libfreeglut
+#LIBS += libfreeglut
+
