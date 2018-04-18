@@ -7,6 +7,7 @@
 #include <QDir>
 #include <QSurfaceFormat>
 
+
 #include <dbmanager.h>
 
 QDir DBdir("test.db");

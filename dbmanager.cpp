@@ -1774,4 +1774,5 @@ bool DB_Manager::clearAll(){
 
 
 return true;
+
 }
