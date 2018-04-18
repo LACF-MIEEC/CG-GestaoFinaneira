@@ -3,7 +3,7 @@
 
 #include <QtGui>
 
-#include <freeglut.h>
+#include <GL/freeglut.h>
 
 #include <QOpenGLWidget>
 #include <QOpenGLFunctions>

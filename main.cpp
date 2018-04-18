@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include <QApplication>
 
-#include "freeglut.h"
+#include "GL/freeglut.h"
 
 #include <QDebug>
 #include <QDir>
